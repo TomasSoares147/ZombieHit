@@ -1,0 +1,101 @@
+/* Importar fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: #000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #27ae60;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #27ae60;
+    text-shadow: 0 0 10px #27ae60;
+}
+
+/* Seção de Download */
+.download-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.download-section h1 {
+    font-size: 42px;
+    text-shadow: 0 0 15px #27ae60;
+}
+
+.download-section p {
+    font-size: 20px;
+    margin: 15px 0 25px;
+    opacity: 0.8;
+}
+
+/* Botão de Download */
+.cta-btn {
+    background: #27ae60;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px #27ae60;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background: #219150;
+    box-shadow: 0 0 30px #27ae60;
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background: black;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 2px solid #27ae60;
+    opacity: 0.7;
+    width: 100%;
+}
